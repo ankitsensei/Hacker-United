@@ -6,7 +6,7 @@ interface BtnProps {
 
 const Btn: React.FC<BtnProps> = ({name, link}) => {
     return (
-        <div className="relative px-2 py-1 border-[1px] border-purple-500 rounded overflow-hidden group">
+        <div className="relative px-2 py-1 border-2 border-purple-500 rounded overflow-hidden group">
             <button className="relative">
                 <a 
                     href={link} 

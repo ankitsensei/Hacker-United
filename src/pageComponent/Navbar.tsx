@@ -8,7 +8,7 @@ const Navbar = () => {
     const [open, setOpen] = useState<boolean>(false)
 
     return (
-        <div className="py-2 px-2 flex items-center justify-between bg-black relative border-b-[0.2px] border-purple-600">
+        <div className="py-2 px-2 flex items-center justify-between bg-neutral-900 relative border-b-2 border-purple-600">
             <div className="left flex items-center">
                 <img src={Logo} alt="Logo" className="w-10" />
                 <p className="text-white ml-2">Hack United</p>
@@ -25,7 +25,7 @@ const Navbar = () => {
 
             {/* Dropdown Menu */}
             {open && (
-                <ul className="flex flex-col gap-2 absolute top-16 right-2 bg-black p-3 rounded-lg border-[0.2px] border-purple-600 z-10">
+                <ul className="flex flex-col gap-2 absolute top-16 right-2 bg-black p-3 rounded-lg border-2 border-purple-600 z-10">
                     <li className="hover:bg-purple-800 px-2 py-1 rounded text-white cursor-pointer">Home</li>
                     <li className="hover:bg-purple-800 px-2 py-1 rounded text-white cursor-pointer">Explore</li>
                     <li className="hover:bg-purple-800 px-2 py-1 rounded text-white cursor-pointer">Information</li>
