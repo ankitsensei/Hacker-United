@@ -3,7 +3,7 @@
 @tailwind utilities;
 @font-face {
     font-family: 'glitchGoblin';
-    src:url('./public/fonts/GlitchGoblin.ttf') format('truetype');
+    src:url('../public/fonts/GlitchGoblin-2O87v.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
