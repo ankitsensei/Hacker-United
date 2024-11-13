@@ -31,10 +31,10 @@ const RealTimeDate: React.FC = () => {
 
     return (
     <div className='mt-10'>
-        <p className='w-24 px-2 py-2 rounded-lg bg-[#681c8d] absolute z-50 top-20 right-6'>Online <FontAwesomeIcon icon={faCircleDot} className='text-green-600'/></p>
+        <p className='w-24 px-2 py-2 rounded-lg bg-[#681c8d]'>Online <FontAwesomeIcon icon={faCircleDot} className='text-green-600'/></p>
         <div className='flex justify-center items-center gap-2'>
-            <h1 className='text-sm border-2 border-purple-600 w-32 h-16 flex justify-center items-center rounded-lg'>New York</h1>
-            <p className='text-sm border-2 border-purple-600 w-32 h-16 flex justify-center items-center rounded-lg'>{date}</p>
+            <h1 className='text-sm border-2 border-purple-900 bg-gradient-to-r from-zinc-900 to-purple-950 w-32 h-16 flex justify-center items-center rounded-lg'>New York</h1>
+            <p className='text-sm border-2 border-purple-900 bg-gradient-to-r from-zinc-900 to-purple-950 w-32 h-16 flex justify-center items-center rounded-lg'>{date}</p>
         </div>
 
         </div>

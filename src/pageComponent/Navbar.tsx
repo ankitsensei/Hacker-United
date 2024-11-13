@@ -8,7 +8,7 @@ const Navbar = () => {
     const [open, setOpen] = useState<boolean>(false)
 
     return (
-        <div className="py-2 px-2 flex items-center justify-between bg-neutral-900 relative border-b-2 border-purple-600">
+        <div className="py-2 px-2 flex items-center justify-between">
             <div className="left flex items-center">
                 <img src={Logo} alt="Logo" className="w-10" />
                 <p className="text-white ml-2">Hack United</p>
