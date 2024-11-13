@@ -30,14 +30,25 @@ const RealTimeDate: React.FC = () => {
     }, []);
 
     return (
-    <div className='mt-10'>
-        <p className='w-24 px-2 py-2 rounded-lg bg-[#681c8d]'>Online <FontAwesomeIcon icon={faCircleDot} className='text-green-600'/></p>
-        <div className='flex justify-center items-center gap-2'>
-            <h1 className='text-sm border-2 border-purple-900 bg-gradient-to-r from-zinc-900 to-purple-950 w-32 h-16 flex justify-center items-center rounded-lg'>New York</h1>
-            <p className='text-sm border-2 border-purple-900 bg-gradient-to-r from-zinc-900 to-purple-950 w-32 h-16 flex justify-center items-center rounded-lg'>{date}</p>
-        </div>
+        <div className="mt-10">
+    <div className="relative flex justify-center items-center gap-2">
+        <h1 className="text-sm border-2 border-purple-900 bg-gradient-to-r from-zinc-900 to-purple-950 w-32 h-16 flex justify-center items-center rounded-lg">
+            New York
+        </h1>
 
+        <div className="relative">
+            <p className="text-sm border-2 border-purple-900 bg-gradient-to-r from-zinc-900 to-purple-950 w-32 h-16 flex justify-center items-center rounded-lg">
+                {date}
+            </p>
+
+            <p className="w-24 px-2 py-2 rounded-lg bg-[#681c8d] absolute -top-6 -right-5 flex items-center">
+                Online <FontAwesomeIcon icon={faCircleDot} className="text-green-600 ml-1" />
+            </p>
         </div>
+    </div>
+</div>
+
+    
     );
 };
 
