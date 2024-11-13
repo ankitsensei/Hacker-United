@@ -4,7 +4,7 @@ import Hero from "./pageComponent/Hero"
 const App = () => {
   return (
     <div className="w-full h-full text-white bg-[url('./src/assets/hero.png')] bg-cover">
-      <div className="home w-full h-screen ">
+      <div className="home w-full h-screen flex flex-col justify-around">
         <Navbar/>
         <Hero/>
       </div>
