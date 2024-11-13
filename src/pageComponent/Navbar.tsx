@@ -83,14 +83,14 @@ const Navbar = () => {
             </div>
 
             {/* Menu (always visible on desktop) */}
-            <div className="hidden md:flex justify-center items-center space-x-6 text-lg font-medium">
+            <div className="hidden md:flex justify-center items-center space-x-6 text-md font-medium">
                 <ul className="flex space-x-6">
                     <li className="hover:text-purple-300 cursor-pointer">Home</li>
                     <li className="hover:text-purple-300 cursor-pointer">Explore</li>
                     <li className="hover:text-purple-300 cursor-pointer">Information</li>
                     <li className="hover:text-purple-300 cursor-pointer">Sponsors</li>
                 </ul>
-                <Btn name="Register" link="#"/>
+                <Btn name="Register" link="#" onClick={() => {}}/>
             </div>
         </nav>
     );
