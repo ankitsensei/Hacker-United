@@ -28,7 +28,7 @@ const RealTimeDate: React.FC = () => {
 
     return (
         <div className="mt-14">
-            <div className="relative flex justify-center items-center gap-4">
+            <div className="relative flex justify-center items-center gap-2">
                 
                 <h1 className="text-sm font-semibold border-2 border-purple-700 bg-gradient-to-r from-purple-800 via-purple-900 to-purple-950 text-white w-32 h-12 flex justify-center items-center rounded-lg shadow-md">
                     New York

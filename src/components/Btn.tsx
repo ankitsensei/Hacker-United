@@ -5,6 +5,7 @@ interface BtnProps {
     onClick: () => void;
 }
 
+
 const Btn: React.FC<BtnProps> = ({name, link, onClick}) => {
     return (
         <div onClick={onClick} className="relative w-40 px-2 py-2 border-2 border-purple-500 rounded overflow-hidden group">

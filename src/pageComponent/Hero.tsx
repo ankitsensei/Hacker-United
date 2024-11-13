@@ -32,7 +32,7 @@ const Hero = () => {
 
     return (
         <div className="px-2 flex flex-col justify-center items-center">
-            <div className="w-full flex flex-col items-center justify-center">
+            <div className="w-full flex flex-col items-center justify-center mt-10">
                 <img src={Logo} alt="logo" className="w-[400px]" />
                 <h1 className="text-4xl font-bold font-glitchGoblin text-purple-500">HACK UNITED</h1>
             </div>
