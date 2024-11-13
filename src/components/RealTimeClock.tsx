@@ -2,9 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleDot } from '@fortawesome/free-solid-svg-icons'
 import React, { useEffect, useState } from 'react';
 
-// Helper function to format the date
 const formatDate = (date: Date): string => {
-  // Formatting to New York time zone and required format
     return new Intl.DateTimeFormat('en-US', {
         month: 'short',
         day: '2-digit',
@@ -17,38 +15,36 @@ const RealTimeDate: React.FC = () => {
     const [date, setDate] = useState<string>('');   
     useEffect(() => {
         const updateDate = () => {
-        const currentDate = new Date();
-        const formattedDate = formatDate(currentDate);
-        setDate(formattedDate);
-    };
+            const currentDate = new Date();
+            const formattedDate = formatDate(currentDate);
+            setDate(formattedDate);
+        };
 
-    updateDate(); // Initial call to set the date
+        updateDate(); // Initial call to set the date
+        const interval = setInterval(updateDate, 24 * 60 * 60 * 1000); // Update every day
 
-    const interval = setInterval(updateDate, 24 * 60 * 60 * 1000); // Update every day
-
-    return () => clearInterval(interval); // Cleanup on unmount
+        return () => clearInterval(interval); // Cleanup on unmount
     }, []);
 
     return (
-        <div className="mt-10">
-    <div className="relative flex justify-center items-center gap-2">
-        <h1 className="text-sm border-2 border-purple-900 bg-gradient-to-r from-zinc-900 to-purple-950 w-32 h-16 flex justify-center items-center rounded-lg">
-            New York
-        </h1>
+        <div className="mt-14">
+            <div className="relative flex justify-center items-center gap-4">
+                
+                <h1 className="text-sm font-semibold border-2 border-purple-700 bg-gradient-to-r from-purple-800 via-purple-900 to-purple-950 text-white w-32 h-12 flex justify-center items-center rounded-lg shadow-md">
+                    New York
+                </h1>
 
-        <div className="relative">
-            <p className="text-sm border-2 border-purple-900 bg-gradient-to-r from-zinc-900 to-purple-950 w-32 h-16 flex justify-center items-center rounded-lg">
-                {date}
-            </p>
+                <div className="relative">
+                    <p className="text-sm font-semibold border-2 border-purple-700 bg-gradient-to-r from-purple-800 via-purple-900 to-purple-950 text-white w-32 h-12 flex justify-center items-center rounded-lg shadow-md">
+                        {date}
+                    </p>
 
-            <p className="w-24 px-2 py-2 rounded-lg bg-[#681c8d] absolute -top-6 -right-5 flex items-center">
-                Online <FontAwesomeIcon icon={faCircleDot} className="text-green-600 ml-1" />
-            </p>
+                    <p className="absolute -top-4 -right-4 px-2 py-1 text-xs font-medium rounded-full bg-gradient-to-r from-purple-700 to-purple-900 text-white shadow-lg flex items-center gap-1">
+                        Online <FontAwesomeIcon icon={faCircleDot} className="text-green-400" />
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-
-    
     );
 };
 

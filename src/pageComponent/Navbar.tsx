@@ -31,7 +31,7 @@ const Navbar = () => {
                     <li className="hover:bg-purple-800 px-2 py-1 rounded text-white cursor-pointer">Information</li>
                     <li className="hover:bg-purple-800 px-2 py-1 rounded text-white cursor-pointer">Sponsors</li>
                     <li>
-                        <Btn name="Register" link="#" />
+                        <Btn name="Register" link="#" onClick={() => {}} />
                     </li>
                 </ul>
             )}

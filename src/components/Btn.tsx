@@ -2,11 +2,12 @@
 interface BtnProps {
     name: string;
     link: string;
+    onClick: () => void;
 }
 
-const Btn: React.FC<BtnProps> = ({name, link}) => {
+const Btn: React.FC<BtnProps> = ({name, link, onClick}) => {
     return (
-        <div className="relative w-40 px-2 py-2 border-2 border-purple-500 rounded overflow-hidden group">
+        <div onClick={onClick} className="relative w-40 px-2 py-2 border-2 border-purple-500 rounded overflow-hidden group">
             <button className="relative">
                 <a 
                     href={link} 
