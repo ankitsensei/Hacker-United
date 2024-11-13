@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../assets/Logos/Hackunited3.png';
 import gsap from 'gsap';
-
+import Btn from "../components/Btn"
 const Navbar = () => {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
     const menuRef = useRef<HTMLDivElement | null>(null);
     const crossIconRef = useRef<SVGSVGElement | null>(null);
 
@@ -83,17 +83,14 @@ const Navbar = () => {
             </div>
 
             {/* Menu (always visible on desktop) */}
-            <div className="hidden md:flex space-x-6 text-lg font-medium">
+            <div className="hidden md:flex justify-center items-center space-x-6 text-lg font-medium">
                 <ul className="flex space-x-6">
                     <li className="hover:text-purple-300 cursor-pointer">Home</li>
                     <li className="hover:text-purple-300 cursor-pointer">Explore</li>
                     <li className="hover:text-purple-300 cursor-pointer">Information</li>
                     <li className="hover:text-purple-300 cursor-pointer">Sponsors</li>
                 </ul>
-
-                <button className="px-6 py-2 bg-purple-700 rounded-md hover:bg-purple-600 transition-colors duration-300">
-                    Register
-                </button>
+                <Btn name="Register" link="#"/>
             </div>
         </nav>
     );
