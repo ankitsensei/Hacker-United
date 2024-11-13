@@ -39,7 +39,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex items-center space-x-2">
                 <img src={Logo} alt="Logo" className="w-8 h-8" />
-                <p className="text-md tracking-wide">Hack United</p>
+                <p className="text-lg font-semibold tracking-wide">Hack United</p>
             </div>
 
             {/* Hamburger Icon (only visible on mobile) */}
