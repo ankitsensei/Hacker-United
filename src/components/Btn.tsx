@@ -8,7 +8,7 @@ interface BtnProps {
 
 const Btn: React.FC<BtnProps> = ({name, link, onClick}) => {
     return (
-        <div onClick={onClick} className="relative px-5 py-2 border-2 border-purple-500 rounded overflow-hidden group bg-purple-600">
+        <div onClick={onClick} className="relative px-5 py-1 border-2 border-purple-500 rounded overflow-hidden group bg-purple-600">
             <button className="relative ">
                 <a 
                     href={link}

@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleDot } from '@fortawesome/free-solid-svg-icons'
+import { faDiscord } from '@fortawesome/free-brands-svg-icons'
 import React, { useEffect, useState } from 'react';
+import Btn2 from "./Btn2"
 
 const formatDate = (date: Date): string => {
     return new Intl.DateTimeFormat('en-US', {
@@ -44,6 +46,12 @@ const RealTimeDate: React.FC = () => {
                     </p>
                 </div>
             </div>
+            <div className='flex justify-between gap-2 items-center w-full'>
+                <Btn2 name="Discord" link="https://discord.gg/PszEUgsk" onClick={() => {}}/>
+                <Btn2 name="Devpost" link="https://unitedhacks23.devpost.com/" onClick={() => {}}/>
+                <Btn2 name="Donate" link="https://hcb.hackclub.com/donations/start/hackunited" onClick={() => {}}/>
+            </div>
+            
         </div>
     );
 };
