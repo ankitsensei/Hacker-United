@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleDot } from '@fortawesome/free-solid-svg-icons'
-import { faDiscord } from '@fortawesome/free-brands-svg-icons'
 import React, { useEffect, useState } from 'react';
 import Btn2 from "./Btn2"
 

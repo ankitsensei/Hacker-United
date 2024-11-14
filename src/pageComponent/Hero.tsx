@@ -30,7 +30,7 @@ const Hero = () => {
             // Submit the form or proceed with the next step
             console.log("Email submitted:", email);
         }
-    };
+    }; 
 
     return (
         <div className="px-2 flex flex-col justify-center items-center lg:flex-row lg:w-full lg:px-40">
