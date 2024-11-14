@@ -7,7 +7,7 @@ const Hero = () => {
     const [error, setError] = useState("");
 
     // Function to validate email
-    const validateEmail = (email:string) => {
+    const validateEmail = (email: string) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     };
@@ -19,7 +19,9 @@ const Hero = () => {
     };
 
     // Handle form submission
-    const handleSubmit = () => {
+    const handleSubmit = (e?: React.FormEvent) => {
+        if (e) e.preventDefault(); // Prevent default form submission
+
         // Validate email only on submit
         if (!validateEmail(email)) {
             setError("Please enter a valid email address.");
@@ -39,33 +41,33 @@ const Hero = () => {
             <div className='flex flex-col w-full items-center'>
                 <RealTimeClock />
                 <div className='flex flex-col items-center border-2 border-[#a955f736] mt-5 w-[90%] p-5 rounded-md lg:w-1/2'>
-                    <div className='flex flex-col items-center justify-center  text-sm'>
-                        <p>
-                            Sign up for updates on Hack United.
-                        </p>
-                        <p>
-                            No spam, we promise
-                        </p>
+                    <div className='flex flex-col items-center justify-center text-sm'>
+                        <p>Sign up for updates on Hack United.</p>
+                        <p>No spam, we promise</p>
                     </div>
-                    {/* Email Input */}
-                    <input
-                        type="email"
-                        placeholder="your email here"
-                        value={email}
-                        onChange={handleEmailChange}
-                        className={`text-sm bg-gradient-to-r from-zinc-900 to-purple-950 w-full h-10 mt-2 rounded-md border-2 ${error ? 'border-red-500' : 'border-purple-900'} outline-none px-2`}
-                    />
-                    {/* Error Message */}
-                    {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
+                    
+                    {/* Form for handling Enter key submission */}
+                    <form onSubmit={handleSubmit} className="w-full">
+                        {/* Email Input */}
+                        <input
+                            type="email"
+                            placeholder="your email here"
+                            value={email}
+                            onChange={handleEmailChange}
+                            className={`text-sm bg-gradient-to-r from-zinc-900 to-purple-950 w-full h-10 mt-2 rounded-md border-2 ${error ? 'border-red-500' : 'border-purple-900'} outline-none px-2`}
+                        />
+                        {/* Error Message */}
+                        {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
 
-                    <div>
-                        {/* Button triggers validation on click */}
-                        <button 
-                            onClick={handleSubmit} 
-                            className="bg-purple-700 text-white text-sm px-4 py-2 mt-5 rounded-md hover:bg-purple-600 transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
-                            Apply Now
-                        </button>
-                    </div>
+                        <div className="flex justify-center">
+                            {/* Button triggers validation on click or Enter key */}
+                            <button 
+                                type="submit" 
+                                className="bg-purple-700 text-white text-sm px-4 py-2 mt-5 rounded-md hover:bg-purple-600 transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+                                Apply Now
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -73,4 +75,3 @@ const Hero = () => {
 };
 
 export default Hero;
-        
