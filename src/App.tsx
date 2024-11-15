@@ -1,6 +1,7 @@
 import Navbar from "./pageComponent/Navbar"
 import Hero from "./pageComponent/Hero"
 import Participate from "./pageComponent/Participate"
+import ScrollingText from "./components/ScrollingText"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
@@ -15,6 +16,9 @@ const App = () => {
       </div>
       <div className="whyParticipate px-5 mt-32">
         <Participate/>
+      </div>
+      <div>
+        <ScrollingText/>
       </div>
     </div>
   )

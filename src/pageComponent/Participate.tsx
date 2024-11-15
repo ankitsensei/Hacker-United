@@ -1,6 +1,7 @@
 import ParticipateComp from "../components/ParticipateComp";
 import CodingSvg from "../assets/Illustrations/undraw_programmer_re_owql.svg";
 import PrizeSvg from "../assets/Illustrations/undraw_gift_re_qr17.svg"
+import CodingPairSvg from "../assets/Illustrations/undraw_pair_programming_re_or4x.svg";
 
 const Participate = () => {
     return (
@@ -10,9 +11,8 @@ const Participate = () => {
                     Why Participate?
                 </h1>
             </div>
-            
             <div className="h-screen flex flex-col items-center justify-center lg:flex-row lg:gap-20 lg:mx-80">
-                <img src={CodingSvg} alt="coding" className="w-1/2 lg:w-1/4" />
+                <img src={CodingSvg} alt="coding" className="w-60 lg:w-[300px]" />
                 <div className="mt-2">
                     <ParticipateComp 
                         heading="Learn more than just Coding" 
@@ -21,11 +21,20 @@ const Participate = () => {
                 </div>
             </div>
             <div className="h-screen flex flex-col items-center justify-center mt-10 lg:flex-row lg:gap-20 lg:mx-80">
-                <img src={PrizeSvg} alt="prize" className="w-1/2 lg:w-1/4" />
+                <img src={PrizeSvg} alt="prize" className="w-80 lg:w-[400px]" />
                 <div className="mt-2">
                     <ParticipateComp 
                         heading="Innovate to Win Prizes" 
-                        para="Get ready to showcase your creativity and problem-solving skills at our hackathon, where you can win exciting prizes by coming up with groundbreaking ideas. It's an opportunity to think outside the box and push the boundaries of innovation. This is a great place to submit a project you were going to build anyway, except you get the oppurtunity to win prizes and get recognized for it.
+                        para="Get ready to showcase your creativity and problem-solving skills at our hackathon, where you can win exciting prizes by coming up with groundbreaking ideas. It's an opportunity to think outside the box and push the boundaries of innovation. This is a great place to submit a project you were going to build anyway, except you get the oppurtunity to win prizes and get recognized for it."
+                    />
+                </div>
+            </div>
+            <div className="h-screen flex flex-col items-center justify-center mt-10 lg:flex-row lg:gap-20 lg:mx-80">
+                <img src={CodingPairSvg} alt="prize" className="w-80 lg:w-[400px]" />
+                <div className="mt-2">
+                    <ParticipateComp 
+                        heading="Collaborate With Others" 
+                        para="Connect and interact with individuals from different countries and backgrounds at our hackathon! Discover people who share an interest in similar projects and collaborate based on your respective strengths and weaknesses. Join forces with fellow participants to create a functional project that reflects everyone's passion and dedication, building lasting relationships beyond the hacking period.
 "
                     />
                 </div>
