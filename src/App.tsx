@@ -13,7 +13,7 @@ const App = () => {
         <Hero/>
         <FontAwesomeIcon icon={faAnglesDown} className="absolute z-10 bottom-5 right-1/2 animate-bounce text-md text-purple-400"/>
       </div>
-      <div className="whyParticipate px-5">
+      <div className="whyParticipate px-5 mt-32">
         <Participate/>
       </div>
     </div>
