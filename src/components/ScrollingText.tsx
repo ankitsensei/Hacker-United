@@ -32,7 +32,7 @@ const ScrollingText = () => {
     return (
     <div
         ref={containerRef}
-        className="overflow-hidden whitespace-nowrap relative w-full h-16 flex items-center bg-gradient-to-r from-purple-900 to-zinc-900 lg:h-80 lg:border-spacing-y-10 lg:border-pink-600"
+        className="overflow-hidden whitespace-nowrap relative w-full h-16 flex items-center bg-gradient-to-r from-purple-900 to-zinc-900 lg:h-80 lg:border-spacing-y-10 border-y-2 border-double lg:border-purple-600 border-purple-500 lg:border-y-8"
     >
         <div
         ref={textWrapperRef}
