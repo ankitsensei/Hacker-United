@@ -2,6 +2,7 @@ import Navbar from "./pageComponent/Navbar"
 import Hero from "./pageComponent/Hero"
 import Participate from "./pageComponent/Participate"
 import ScrollingText from "./components/ScrollingText"
+import Explore from "./pageComponent/Explore"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
@@ -17,8 +18,11 @@ const App = () => {
       <div className="whyParticipate px-5 mt-32">
         <Participate/>
       </div>
-      <div>
+      <div className="scrollingText my-20">
         <ScrollingText/>
+      </div>
+      <div className="w-full h-screen">
+        <Explore />
       </div>
     </div>
   )
