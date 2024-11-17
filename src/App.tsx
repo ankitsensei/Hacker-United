@@ -21,7 +21,7 @@ const App = () => {
       <div className="scrollingText my-20">
         <ScrollingText/>
       </div>
-      <div className="w-full h-screen">
+      <div className="w-full h-full">
         <Explore />
       </div>
     </div>
