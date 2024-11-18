@@ -7,7 +7,7 @@ const Explore = () => {
             <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text underline underline-offset-4 lg:text-4xl">Explore</h1>
             <p className="text-zinc-300">A look at our <span className='text-pink-400'>history</span></p>
             <div>
-                <div className="mt-10">
+                <div className="mt-10 h-screen">
                     <Folders/>
                 </div>
             </div>

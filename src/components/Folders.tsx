@@ -24,10 +24,10 @@ const folderData = [
 const Folders = () => {
     const [openYear, setOpenYear] = useState(2024); 
     return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between lg:gap-40 lg:mx-20">
         {/* Folder Selector */}
         <div className="mt-4">
-        <div className="flex flex-wrap justify-center items-center gap-5 lg:gap-10">
+        <div className="flex flex-wrap justify-center items-center gap-5 lg:gap-10 lg:justify-start">
             {folderData.map((folder) => (
             <div
                 key={folder.year}
@@ -45,7 +45,7 @@ const Folders = () => {
     </div>
 
       {/* Folder Content */}
-        <div className="mt-6 w-full max-w-4xl">
+        <div className="mt-6 w-full max-w-4xl lg:h-40">
         {folderData.map(
             (folder) =>
             openYear === folder.year && (
