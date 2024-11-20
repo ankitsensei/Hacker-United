@@ -38,10 +38,10 @@ const ScrollingText = () => {
         ref={textWrapperRef}
         className="flex justify-center items-center gap-10 text-xl font-semibold text-purple-300 font-glitchGoblin lg:text-[10rem] lg:gap-40"
         >
-        Hack United <img src={Logo} alt="Logo" className="w-10 lg:w-40" />
-        Hack United <img src={Logo} alt="Logo" className="w-10 lg:w-40" />
-        Hack United <img src={Logo} alt="Logo" className="w-10 lg:w-40" />
-        Hack United <img src={Logo} alt="Logo" className="w-10 lg:w-40" />
+        United Hacks V4 <img src={Logo} alt="Logo" className="w-10 lg:w-40" />
+        United Hacks V4 <img src={Logo} alt="Logo" className="w-10 lg:w-40" />
+        United Hacks V4 <img src={Logo} alt="Logo" className="w-10 lg:w-40" />
+        United Hacks V4 <img src={Logo} alt="Logo" className="w-10 lg:w-40" />
         </div>
     </div>
     );
