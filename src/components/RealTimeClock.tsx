@@ -31,12 +31,12 @@ const RealTimeDate: React.FC = () => {
         <div className="mt-14">
             <div className="relative flex justify-center items-center gap-2">
                 
-                <h1 className="text-sm font-semibold border-2 border-purple-700 bg-gradient-to-r from-purple-800 via-purple-900 to-purple-950 text-white w-32 h-12 flex justify-center items-center rounded-lg shadow-md">
+                <h1 className="text-sm font-semibold border-2 border-purple-700 text-white w-32 h-12 flex justify-center items-center rounded-lg shadow-md">
                     New York
                 </h1>
 
                 <div className="relative">
-                    <p className="text-sm font-semibold border-2 border-purple-700 bg-gradient-to-r from-purple-800 via-purple-900 to-purple-950 text-white w-32 h-12 flex justify-center items-center rounded-lg shadow-md">
+                    <p className="text-sm font-semibold border-2 border-purple-700  text-white w-32 h-12 flex justify-center items-center rounded-lg shadow-md">
                         {date}
                     </p>
 
