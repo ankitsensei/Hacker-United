@@ -6,6 +6,7 @@ import Explore from "./pageComponent/Explore"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
+import Sponsors from "./pageComponent/Sponsors"
 // import HeroBg from "./assets/hero.png"
 const App = () => {
   return (
@@ -21,8 +22,11 @@ const App = () => {
       <div className="scrollingText my-20">
         <ScrollingText/>
       </div>
-      <div className="w-full h-full">
+      <div className="w-full h-screen">
         <Explore />
+      </div>
+      <div className="w-full h-full">
+        <Sponsors/>
       </div>
     </div>
   )
