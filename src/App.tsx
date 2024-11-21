@@ -7,6 +7,7 @@ import Explore from "./pageComponent/Explore"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
 import Sponsors from "./pageComponent/Sponsors"
+import Faq from "./pageComponent/Faq"
 // import HeroBg from "./assets/hero.png"
 const App = () => {
   return (
@@ -28,7 +29,10 @@ const App = () => {
       <div className="w-full h-full">
         <Sponsors/>
       </div>
-    </div>
+      <div className="w-full h-full mt-40">
+        <Faq/>
+      </div>
+    </div>  
   )
 }
 
