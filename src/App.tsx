@@ -29,7 +29,7 @@ const App = () => {
       <div className="w-full h-full">
         <Sponsors/>
       </div>
-      <div className="w-full h-full mt-40">
+      <div className="w-full h-screen mt-40">
         <Faq/>
       </div>
     </div>  
