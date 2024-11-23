@@ -1,35 +1,35 @@
-import { useState, useRef, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
-import Logo from '../assets/Logos/Hackunited3.png';
-import gsap from 'gsap';
-import Btn from "../components/Btn"
+import { useState, useRef, useEffect } from "react";
+import { Link } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import Logo from "../assets/Logos/Hackunited3.png";
+import gsap from "gsap";
+import Btn from "../components/Btn";
+
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const menuRef = useRef<HTMLDivElement | null>(null);
     const crossIconRef = useRef<SVGSVGElement | null>(null);
 
-    // GSAP animation for opening/closing the full-screen menu
     useEffect(() => {
         if (open && menuRef.current) {
             gsap.fromTo(
                 menuRef.current,
-                { x: '100%' },
-                { x: '0%', duration: 0.5, ease: 'power3.out' }
+                { x: "100%" },
+                { x: "0%", duration: 0.5, ease: "power3.out" }
             );
         } else if (menuRef.current) {
-            gsap.to(menuRef.current, { x: '100%', duration: 0.5, ease: 'power3.in' });
+            gsap.to(menuRef.current, { x: "100%", duration: 0.5, ease: "power3.in" });
         }
     }, [open]);
 
-    // GSAP animation for the cross icon when the menu opens/closes
     useEffect(() => {
         if (crossIconRef.current) {
             gsap.to(crossIconRef.current, {
                 rotation: open ? 0 : 45,
                 scale: open ? 1 : 1.2,
                 duration: 0.3,
-                ease: 'power2.out',
+                ease: "power2.out",
             });
         }
     }, [open]);
@@ -55,7 +55,7 @@ const Navbar = () => {
             <div
                 ref={menuRef}
                 className={`${
-                    open ? 'flex' : 'hidden'
+                    open ? "flex" : "hidden"
                 } fixed top-0 right-0 w-full h-full bg-zinc-900 text-white flex-col items-center justify-center space-y-8 text-2xl font-medium z-30 md:hidden`}
             >
                 <button
@@ -71,10 +71,50 @@ const Navbar = () => {
                 </button>
 
                 <ul className="text-center space-y-4">
-                    <li className="hover:text-purple-300 cursor-pointer transition duration-300">Home</li>
-                    <li className="hover:text-purple-300 cursor-pointer transition duration-300">Explore</li>
-                    <li className="hover:text-purple-300 cursor-pointer transition duration-300">Information</li>
-                    <li className="hover:text-purple-300 cursor-pointer transition duration-300">Sponsors</li>
+                    <li>
+                        <Link
+                            to="home"
+                            smooth={true}
+                            duration={500}
+                            onClick={() => setOpen(false)}
+                            className="hover:text-purple-300 cursor-pointer transition duration-300"
+                        >
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="explore"
+                            smooth={true}
+                            duration={500}
+                            onClick={() => setOpen(false)}
+                            className="hover:text-purple-300 cursor-pointer transition duration-300"
+                        >
+                            Explore
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="sponsors"
+                            smooth={true}
+                            duration={500}
+                            onClick={() => setOpen(false)}
+                            className="hover:text-purple-300 cursor-pointer transition duration-300"
+                        >
+                            Sponsors
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="faq"
+                            smooth={true}
+                            duration={500}
+                            onClick={() => setOpen(false)}
+                            className="hover:text-purple-300 cursor-pointer transition duration-300"
+                        >
+                            Information
+                        </Link>
+                    </li>
                 </ul>
 
                 <button className="mt-8 px-6 py-2 bg-purple-700 rounded-md hover:bg-purple-600 transition-colors duration-300">
@@ -85,12 +125,48 @@ const Navbar = () => {
             {/* Menu (always visible on desktop) */}
             <div className="hidden md:flex justify-center items-center space-x-6 text-md font-medium">
                 <ul className="flex space-x-6">
-                    <li className="hover:text-purple-300 cursor-pointer">Home</li>
-                    <li className="hover:text-purple-300 cursor-pointer">Explore</li>
-                    <li className="hover:text-purple-300 cursor-pointer">Information</li>
-                    <li className="hover:text-purple-300 cursor-pointer">Sponsors</li>
+                    <li>
+                        <Link
+                            to="home"
+                            smooth={true}
+                            duration={500}
+                            className="hover:text-purple-300 cursor-pointer"
+                        >
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="explore"
+                            smooth={true}
+                            duration={500}
+                            className="hover:text-purple-300 cursor-pointer"
+                        >
+                            Explore
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="sponsors"
+                            smooth={true}
+                            duration={500}
+                            className="hover:text-purple-300 cursor-pointer"
+                        >
+                            Sponsors
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="faq"
+                            smooth={true}
+                            duration={500}
+                            className="hover:text-purple-300 cursor-pointer"
+                        >
+                            Information
+                        </Link>
+                    </li>
                 </ul>
-                <Btn name="Register" link="#" onClick={() => {}}/>
+                <Btn name="Register" link="#" onClick={() => {}} />
             </div>
         </nav>
     );
