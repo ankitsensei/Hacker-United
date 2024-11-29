@@ -166,7 +166,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                 </ul>
-                <Btn name="Register" link="#" onClick={() => {}} />
+                <Btn name="Register" link="https://forms.gle/4A4dM2tujo8F7Ggm6" onClick={() => {}} />
             </div>
         </nav>
     );
