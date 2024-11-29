@@ -48,4 +48,24 @@ export default tseslint.config({
   },
 })
 ```
+
+## Running the Code
+
+To run this code in the terminal, follow these steps:
+
+1. Install the necessary dependencies:
+    ```sh
+    npm install
+    ```
+
+2. Run the Vite development server:
+    ```sh
+    npm run dev
+    ```
+
+3. To lint your code, run:
+    ```sh
+    npm run lint
+    ```
+
 # Hacker-United
