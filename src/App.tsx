@@ -35,7 +35,7 @@ const App = () => {
       <div id="sponsors" className="w-full h-full">
         <Sponsors />
       </div>
-      <div id="faq" className="w-full h-screen mt-40">
+      <div id="faq" className="w-full h-full mt-40">
         <Faq />
       </div>
     </div>
