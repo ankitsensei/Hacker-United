@@ -5,6 +5,7 @@ import ScrollingText from "./components/ScrollingText";
 import Explore from "./pageComponent/Explore";
 import Sponsors from "./pageComponent/Sponsors";
 import Faq from "./pageComponent/Faq";
+import Footer from "./pageComponent/Footer";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
@@ -37,6 +38,9 @@ const App = () => {
       </div>
       <div id="faq" className="w-full h-full mt-40">
         <Faq />
+      </div>
+      <div id="footer">
+        {/* <Footer/> */}
       </div>
     </div>
   );
