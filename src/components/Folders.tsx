@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFolder, faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 import FoldersComp from './FoldersComp';
+import V1 from "../assets/YTExplore/V1.png"
+import V2 from "../assets/YTExplore/V2.png"
+import V3 from "../assets/YTExplore/V3.png"
 
 // Define the type for a folder item
 interface Folder {
@@ -16,7 +19,7 @@ const folderData: Folder[] = [
     {
         year: 2022,
         context: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dicta architecto necessitatibus.',
-        image: 'https://www.webtekno.com/images/editor/default/0003/45/aeb949ba1c92aa0a55bd438657bb2de0d9708db6.jpeg',
+        image: V1,
         achievements: [
             "400+ participants",
             "50+ projects submitted",
@@ -29,7 +32,7 @@ const folderData: Folder[] = [
     {
         year: 2023,
         context: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dicta architecto necessitatibus.',
-        image: 'https://i0.wp.com/tecknoworks.com/wp-content/uploads/2020/01/hackathon-1.png',
+        image: V2,
         achievements: [
             "400+ participants",
             "50+ projects submitted",
@@ -42,7 +45,7 @@ const folderData: Folder[] = [
     {
         year: 2024,
         context: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dicta architecto necessitatibus.',
-        image: 'https://ohze.co/content/images/size/w2000/2018/11/Hackathon-Coolblue-2017-def.jpg',
+        image: V3,
         achievements: [
             "400+ participants",
             "50+ projects submitted",

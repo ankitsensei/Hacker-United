@@ -16,7 +16,7 @@ const FoldersComp: React.FC<FolderCompProps> = ({ year, context, image, achievem
                 <div className='flex flex-col justify-center items-center lg:w-2/3'>
                     <h1 className="text-2xl font-bold text-pink-500 lg:text-2xl">{year}</h1>
                     <div className="border-2 border-pink-900 p-2 m-2 rounded-lg">
-                        <img src={image} alt="img" className="rounded h-44 lg:h-80" /> 
+                        <img src={image} alt="img" className="rounded h-44 lg:h-96" /> 
                     </div>
                 </div>
                 <div className='flex flex-col justify-center items-start lg:w-1/3'>
