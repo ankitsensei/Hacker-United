@@ -52,11 +52,11 @@ const Footer = () => {
                     <div>
                         <h2 className="mb-4 font-bold text-white">Company</h2>
                         <ul className="text-gray-600 dark:text-gray-400">
-                            <li className="mb-2">
+                            {/* <li className="mb-2">
                                 <a href="/#about" className="hover:underline">
                                     About Us
                                 </a>
-                            </li>
+                            </li> */}
                             <li className="mb-2">
                                 <a href="https://unitedhacksv2.devpost.com/rules" target="_blank" rel="noopener noreferrer" className="hover:underline">
                                     Event Rules
