@@ -18,7 +18,7 @@ interface Folder {
 const folderData: Folder[] = [
     {
         year: 2022,
-        context: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dicta architecto necessitatibus.',
+        context: 'United Hacks V1 was our fist ever hackathon. It was a huge success and we had a lot of fun!',
         image: V1,
         achievements: [
             "400+ participants",
@@ -31,27 +31,27 @@ const folderData: Folder[] = [
     },
     {
         year: 2023,
-        context: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dicta architecto necessitatibus.',
+        context: 'United Hacks V2 was our second ever hackathon. It was a huge success and we had a lot of fun!',
         image: V2,
         achievements: [
             "400+ participants",
-            "50+ projects submitted",
-            "$5,000+ prize pool",
-            "10+ sponsors, 100+ workshop attendees",
+            "70+ projects submitted",
+            "$15,000+ prize pool",
+            "15+ sponsors, 100+ workshop attendees",
             "10 Workshops",
             "Industry professional judges",
         ],
     },
     {
         year: 2024,
-        context: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dicta architecto necessitatibus.',
+        context: 'United Hacks V3 was our mini-hackathon. We kept it small, and had a lot of fun!',
         image: V3,
         achievements: [
-            "400+ participants",
-            "50+ projects submitted",
-            "$5,000+ prize pool",
-            "10+ sponsors, 100+ workshop attendees",
-            "10 Workshops",
+            "150+ participants",
+            "20+ projects submitted",
+            "$2,000+ prize pool",
+            "100+ workshop attendees",
+            "7 Workshops",
             "Industry professional judges",
         ],
     },

@@ -54,8 +54,8 @@ const RealTimeDate: React.FC = () => {
                 </a>
 
                 <div className="relative w-full sm:w-auto">
-                    <p className="text-lg font-bold border-2 border-purple-500 text-white w-full sm:w-60 h-14 flex justify-center items-center rounded-lg shadow-md">
-                        {date || 'January 17-19, 2025'}
+                    <p className="text-lg font-bold border-2 border-purple-500 text-white w-full sm:w-55 h-14 flex justify-center items-center rounded-lg shadow-md">
+                        {'Jan 17-19, 2025'}
                     </p>
 
                     <p className="absolute -top-4 -right-4 px-2 sm:px-3 py-1 sm:py-2 text-sm font-medium rounded-full bg-gradient-to-r from-purple-700 to-purple-900 text-white shadow-lg flex items-center gap-1">

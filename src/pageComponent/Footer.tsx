@@ -58,7 +58,7 @@ const Footer = () => {
                                 </a>
                             </li> */}
                             <li className="mb-2">
-                                <a href="https://unitedhacksv2.devpost.com/rules" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                                <a href="https://unitedhacksv4.devpost.com/rules" target="_blank" rel="noopener noreferrer" className="hover:underline">
                                     Event Rules
                                 </a>
                             </li>
