@@ -3,7 +3,6 @@ import { faCircleDot } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import Btn2 from './Btn2';
 
-// Function to format date
 const formatDate = (date: Date): string => {
     return new Intl.DateTimeFormat('en-US', {
         month: 'short',
