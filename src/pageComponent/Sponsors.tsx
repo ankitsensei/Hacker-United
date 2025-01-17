@@ -15,54 +15,39 @@ const Sponsors = () => {
             <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text underline underline-offset-4 lg:text-4xl ">Our Sponsors</h1>
             <p className="text-zinc-300 text-sm lg:mt-4 lg:mx-40 text-center">Join us in shaping the future of innovation at <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-red-200 text-transparent bg-clip-text">United Hack V4 !</span> By sponsoring our hackathon, you will gain valuable exposure to a diverse community of tech enthusiasts, developers, and aspiring entrepreneurs. Showcase your brand, engage with talented participants, and support the next generation of leaders in technology. To view our prospectus and potentially sponsor our event, please email <b>humans@hackunited.org</b>!
             </p>
-            <div className="mt-10 flex flex-col gap-5 justify-center items-center">
-                <div id="main" className="flex flex-col gap-2"> 
-                    <a href="#" className="rounded-lg">
-                        <img src={CodeCrafter} alt="Placeholder Image" className="rounded lg:h-64" />
+            <div className="mt-10 mx-10 flex flex-col gap-5 justify-center items-center lg:mx-40">
+                <div id="main" className="flex flex-wrap justify-center gap-2 lg:gap-6"> 
+                    <a href="#">
+                        <img src={CodeCrafter} alt="Placeholder Image" className="rounded p-2 border-2 border-zinc-400 h-14 lg:h-32" />
                     </a>
                     <a href="#">
-                        <img src="https://www.goomlandscapes.co.nz/wp-content/uploads/2018/08/logo-placeholder.png" alt="Cover Image" className="rounded lg:h-64"/>
+                        <img src={TreeHouses} alt="Cover Image" className="rounded p-2 border-2 border-zinc-400 h-14 lg:h-32"/>
+                    </a>
+                    <a href="#">
+                        <img src={Devitjobs} alt="Cover Image" className="rounded p-2 border-2 border-zinc-400 h-14 lg:h-32"/>
+                    </a>
+                    <a href="#">
+                        <img src={Genxyz} alt="Cover Image" className="rounded p-2 border-2 border-zinc-400 h-14 lg:h-32"/>
+                    </a>
+                    <a href="#">
+                        <img src={InterviewCake} alt="Cover Image" className="rounded p-2 border-2 border-zinc-400 h-14 lg:h-32"/>
+                    </a>
+                    <a href="#">
+                        <img src={Balsamidq} alt="Cover Image" className="rounded p-2 border-2 border-zinc-400 h-14 lg:h-32"/>
+                    </a>
+                    <a href="#">
+                        <img src={Tintype} alt="Cover Image" className="rounded p-2 border-2 border-zinc-400 h-14 lg:h-32"/>
+                    </a>
+                    <a href="#">
+                        <img src={Aops} alt="Cover Image" className="rounded p-2 border-2 border-zinc-400 h-14 lg:h-32"/>
+                    </a>
+                    <a href="#">
+                        <img src={Cocalc} alt="Cover Image" className="rounded p-2 border-2 border-zinc-400 h-14 lg:h-32"/>
+                    </a>
+                    <a href="#">
+                        <img src={Desmos} alt="Cover Image" className="rounded p-2 border-2 border-zinc-400 h-14 lg:h-32"/>
                     </a>
                 </div>
-                <div id="main2" className="flex gap-2">
-                    <a href="#">
-                        <img src="https://www.goomlandscapes.co.nz/wp-content/uploads/2018/08/logo-placeholder.png" alt="Cover Image" className="rounded lg:h-52"/>
-                    </a>
-                    <a href="#">
-                        <img src="https://www.goomlandscapes.co.nz/wp-content/uploads/2018/08/logo-placeholder.png" alt="Cover Image" className="rounded lg:h-52"/>
-                    </a>
-                </div>
-                <div id="main2" className="flex gap-2">
-                    <a href="#">
-                        <img src="https://www.goomlandscapes.co.nz/wp-content/uploads/2018/08/logo-placeholder.png" alt="Cover Image" className="rounded lg:h-52"/>
-                    </a>
-                    <a href="#">
-                        <img src="https://www.goomlandscapes.co.nz/wp-content/uploads/2018/08/logo-placeholder.png" alt="Cover Image" className="rounded lg:h-52"/>
-                    </a>
-                </div>
-                <div id="main3" className="flex gap-2">
-                    <a href="#">
-                        <img src="https://www.goomlandscapes.co.nz/wp-content/uploads/2018/08/logo-placeholder.png" alt="Cover Image" className="rounded lg:h-40"/>
-                    </a>
-                    <a href="#">
-                        <img src="https://www.goomlandscapes.co.nz/wp-content/uploads/2018/08/logo-placeholder.png" alt="Cover Image" className="rounded lg:h-40"/>
-                    </a>
-                    <a href="#">
-                        <img src="https://www.goomlandscapes.co.nz/wp-content/uploads/2018/08/logo-placeholder.png" alt="Cover Image" className="rounded lg:h-40"/>
-                    </a>
-                </div>
-                <div id="main3" className="flex gap-2">
-                    <a href="#">
-                        <img src="https://www.goomlandscapes.co.nz/wp-content/uploads/2018/08/logo-placeholder.png" alt="Cover Image" className="rounded lg:h-40"/>
-                    </a>
-                    <a href="#">
-                        <img src="https://www.goomlandscapes.co.nz/wp-content/uploads/2018/08/logo-placeholder.png" alt="Cover Image" className="rounded lg:h-40"/>
-                    </a>
-                    <a href="#">
-                        <img src="https://www.goomlandscapes.co.nz/wp-content/uploads/2018/08/logo-placeholder.png" alt="Cover Image" className="rounded lg:h-40"/>
-                    </a>
-                </div>
-
             </div>
         </div>
     )
