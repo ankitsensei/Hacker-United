@@ -33,7 +33,7 @@ const App = () => {
       <div id="explore" className="w-full h-screen">
         <Explore />
       </div>
-      <div id="sponsors" className="w-full h-full">
+      <div id="sponsors" className="w-full h-screen">
         <Sponsors />
       </div>
       <div id="faq" className="w-full h-full mt-40">
